@@ -1,0 +1,94 @@
+📌 Projeto – Urban Routes 
+📖 Descrição do Projeto
+
+Este repositório contém a documentação da 2ª Sprint do projeto Urban Routes, com foco em regras de negócio, fluxogramas e especificações funcionais.
+O objetivo principal é descrever o comportamento do sistema de compartilhamento de carros, incluindo validações, fluxos de decisão e funcionalidades da interface.
+
+🎯 Objetivo
+
+Definir regras de funcionamento do sistema
+
+Documentar fluxos de decisão
+
+Especificar comportamentos da interface
+
+Garantir clareza para desenvolvimento e testes
+
+🧩 Funcionalidades Documentadas
+🚗 Adição de Carteira de Motorista
+
+Pop-up para cadastro da carteira
+
+Validações de campos:
+
+Nome e Sobrenome
+
+Apenas letras latinas, espaço e hífen
+
+Tamanho entre 2 e 14 caracteres
+
+Data de nascimento
+
+Formato dd.mm.aaaa
+
+Intervalo permitido: 1880 a 2006
+
+Apenas números
+
+Número da carteira
+
+Apenas números
+
+Formato padronizado com espaços automáticos
+
+Botões:
+
+Adicionar (ativo apenas com campos válidos)
+
+Cancelar
+
+Fechar (X)
+
+⏱️ Processo de Verificação
+
+Após adicionar a carteira:
+
+Sistema exibe mensagem de confirmação
+
+Timer de 30 segundos
+
+Retorno automático informando se:
+
+✅ Carteira aprovada
+
+❌ Carteira reprovada
+
+Após a adição:
+
+Não é possível editar
+
+Não é permitido adicionar mais de uma carteira
+
+🔀 Fluxograma de Velocidade Média
+
+Fluxo lógico que define a velocidade média de deslocamento de acordo com o horário:
+
+Horário	Velocidade
+00:01 – 08:00	45 km/h
+08:01 – 12:00	30 km/h
+12:01 – 18:00	40 km/h
+18:01 – 22:00	25 km/h
+22:01 – 00:00	45 km/h
+
+🛠️ Ferramentas Utilizadas
+
+Draw.io – Criação de fluxogramas
+
+Excel – Organização e detalhamento de regras
+
+GitHub – Versionamento e documentação
+
+👤 Autor
+
+Henrique
+Projeto desenvolvido para fins educacionais e de documentação de requisitos.
