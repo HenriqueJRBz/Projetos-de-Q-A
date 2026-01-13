@@ -91,56 +91,12 @@ qa-api-project/
 
 ### 🔹 Testes Automatizados (Python)
 
-1. Clonar o repositório:
-```bash
-git clone https://github.com/seu-usuario/qa-api-project.git
-```
 
-2. Instalar dependências:
-```bash
-pip install -r requirements.txt
-```
-
-3. Executar os testes:
-```bash
-pytest
-```
-
----
-
-## 📄 Exemplos de Casos de Teste
-
-**CT-API-01 – Listar produtos**
-- Método: GET
-- Endpoint: /products
-- Resultado esperado: Status 200 e lista de produtos válida
-
-**CT-API-02 – Login inválido**
-- Método: POST
-- Endpoint: /auth/login
-- Resultado esperado: Status 401
-
----
-
-## 📈 Resultados Esperados
-- APIs respondendo conforme esperado
-- Erros tratados corretamente
-- Contrato da API respeitado
-
----
 
 ## 👨‍💻 Autor
+**HENRIQUE JUNIOR BARBOSA**
 Projeto desenvolvido para fins de estudo e portfólio na área de **Qualidade de Software (QA / Tester)**.
 
 ---
 
-## 🚀 Próximos Passos
-- Adicionar testes de contrato com JSON Schema
-- Integrar com CI/CD (GitHub Actions)
-- Relatórios automatizados de testes
-- Testes de performance (JMeter / k6)
-
----
-
-📌 *Projeto fictício sem fins comerciais, utilizado apenas para aprendizado.*
 
