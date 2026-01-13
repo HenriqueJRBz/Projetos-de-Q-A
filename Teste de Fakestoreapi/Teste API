@@ -1,1 +1,455 @@
 
+{
+	"info": {
+		"_postman_id": "50859355-dcf5-4127-bc50-4ec567b6a692",
+		"name": "Projeto Teste API/Users",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "33701413",
+		"_collection_link": "https://www.postman.com/science-candidate-57663962/workspace/teste1/collection/33701413-50859355-dcf5-4127-bc50-4ec567b6a692?action=share&source=collection_link&creator=33701413"
+	},
+	"item": [
+		{
+			"name": "Users",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/users",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "users criado",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"id\": 11,\r\n\"username\": \"Diego\",\r\n\"email\": \"dsr.burrao@gmail.com\",\r\n\"password\": \"abc123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseUrl}}/users",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "id users",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/users/2",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"users",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"id\": 11,\r\n\"username\": \"Diego\",\r\n\"email\": \"dsr.burrao@gmail.com\",\r\n\"password\": \"abc153\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseUrl}}/users/11",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"users",
+						"11"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/users/3",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"users",
+						"3"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
+{
+	"info": {
+		"_postman_id": "f0ce8c63-bf3f-46c7-8c9f-ca688c471e70",
+		"name": "Projeto Teste API/Carts",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "33701413",
+		"_collection_link": "https://www.postman.com/science-candidate-57663962/workspace/teste1/collection/33701413-f0ce8c63-bf3f-46c7-8c9f-ca688c471e70?action=share&source=collection_link&creator=33701413"
+	},
+	"item": [
+		{
+			"name": "{{baseUrl}}/carts",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/carts",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"carts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"id\": 8,\r\n\"userId\": 3,\r\n\"products\": [\r\n{}\r\n]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseUrl}}/carts",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"carts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ID",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"id\": ,\r\n\"userId\": 0,\r\n\"products\": [\r\n{}\r\n]\r\n}"
+				},
+				"url": {
+					"raw": "{{baseUrl}}/carts/3",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"carts",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"id\": 13,\r\n\"userId\": 3,\r\n\"products\": [\r\n{}\r\n]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseUrl}}/carts",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"carts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/carts/8",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"carts",
+						"8"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
+{
+	"info": {
+		"_postman_id": "03fefde1-69ae-4b56-b53d-ed96119a13ce",
+		"name": "Projeto Teste API/Login",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "33701413",
+		"_collection_link": "https://www.postman.com/science-candidate-57663962/workspace/teste1/collection/33701413-03fefde1-69ae-4b56-b53d-ed96119a13ce?action=share&source=collection_link&creator=33701413"
+	},
+	"item": [
+		{
+			"name": "New Request",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"username\": \"johnd\",\r\n  \"password\": \"m38rmF$\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseUrl}}/auth/login",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"auth",
+						"login"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
+{
+	"info": {
+		"_postman_id": "a17f767a-0974-4db5-b2c0-fea6ac96f557",
+		"name": "Projeto Teste API/Products",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "33701413",
+		"_collection_link": "https://www.postman.com/science-candidate-57663962/workspace/teste1/collection/33701413-a17f767a-0974-4db5-b2c0-fea6ac96f557?action=share&source=collection_link&creator=33701413"
+	},
+	"item": [
+		{
+			"name": "Products criando",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"Memoria\",\r\n    \"price\": 45.50,\r\n    \"description\": \"componete\",\r\n    \"category\": \"Hardware\",\r\n    \"image\": \"https://fakestoreapi.com/img/61pHAEJ4NML._AC_UX679_t.png\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseUrl}}/products",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Todos os produtos",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n  {\r\n    \"id\": 0,\r\n    \"title\": \"string\",\r\n    \"price\": 0.1,\r\n    \"description\": \"string\",\r\n    \"category\": \"string\",\r\n    \"image\": \"http://example.com\"\r\n  }\r\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseUrl}}/products",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Pesquisando ID",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"id\": 30,\r\n\"title\": \"string\",\r\n\"price\": 0.1,\r\n\"description\": \"string\",\r\n\"category\": \"string\",\r\n\"image\": \"http://example.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseUrl}}/products/30",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"products",
+						"30"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "products",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"id\": 21,\r\n  \"title\": \"Memoria\",\r\n  \"price\": 45.5,\r\n  \"description\": \"Slim-fitting style, contrast raglan long sleeve, three-button henley placket, light weight & soft fabric for breathable and comfortable wearing. And Solid stitched shirts with round neck made for durability and a great fit for casual fashion wear and diehard baseball fans. The Henley style round neckline includes a three-button placket.\",\r\n  \"category\": \"men's clothing\",\r\n  \"image\": \"https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_t.png\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseUrl}}/products/21",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"products",
+						"21"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deletando",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "fetch('https://fakestoreapi.com/products/21', {\r\n  method: 'DELETE'\r\n})\r\n  .then(response => response.json())\r\n  .then(data => console.log(data));",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseUrl}}/products/21",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"products",
+						"21"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "teste",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"id\": \"asd\",\r\n\"title\": \"string\",\r\n\"price\": 0.1,\r\n\"description\": \"string\",\r\n\"category\": \"string\",\r\n\"image\": \"http://example.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseUrl}}/products",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"products"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
